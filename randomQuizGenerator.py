@@ -29,6 +29,8 @@ for quizNum in range(35):
     # Create the quiz and answer key files
     quizFile = open(f'capitalsquiz{quizNum + 1}.txt', 'w')
     answerKeyFile = open(f'captialsquiz_answers{quizNum + 1}.txt', 'w')
-    # TODO: Write out the header for the quiz
+    # Write out the header for the quiz
+    quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
+    quizFile.write(f'{' ' * 20}State Capitals Quiz (Form {quizNum + 1})')
     # TODO: Shuffle the order of the states
     # TODO: Loop through all 50 states, making a question for each
