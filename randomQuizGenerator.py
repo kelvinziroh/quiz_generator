@@ -26,7 +26,9 @@ capitals = {
 
 # Generate 35 quiz files
 for quizNum in range(35):
-    # TODO: Create the quiz and answer key files
+    # Create the quiz and answer key files
+    quizFile = open(f'capitalsquiz{quizNum + 1}.txt', 'w')
+    answerKeyFile = open(f'captialsquiz_answers{quizNum + 1}.txt', 'w')
     # TODO: Write out the header for the quiz
     # TODO: Shuffle the order of the states
     # TODO: Loop through all 50 states, making a question for each
